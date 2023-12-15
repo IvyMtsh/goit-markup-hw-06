@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -9,7 +10,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WEBSTUDIO</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -20,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--Navigation-->
+    <!--Header-->
 
     <header class="page-header">
       <div class="container-navigation container">
@@ -36,7 +37,16 @@
             <li><a class="link-studio" href="">Contacts</a></li>
           </ul>
         </nav>
-
+        <button class="mobile-menu-btn" type="button">
+          <svg
+            class="mobile-menu-open-btn-icon"
+            width="24"
+            height="24"
+            aria-label="mobile menu open icon"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="connection">
           <ul class="connection-list">
             <li>
@@ -79,9 +89,9 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="list-title">Strategy</h3>
+              <h3 class="list-title-feature">Strategy</h3>
 
-              <p class="list-text">
+              <p class="list-text-feature">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -92,9 +102,9 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="list-title">Punctuality</h3>
+              <h3 class="list-title-feature">Punctuality</h3>
 
-              <p class="list-text">
+              <p class="list-text-feature">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -105,9 +115,9 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="list-title">Diligence</h3>
+              <h3 class="list-title-feature">Diligence</h3>
 
-              <p class="list-text">
+              <p class="list-text-feature">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -118,9 +128,9 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="list-title">Technologies</h3>
+              <h3 class="list-title-feature">Technologies</h3>
 
-              <p class="list-text">
+              <p class="list-text-feature">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -511,7 +521,7 @@
     </footer>
 
     <!--MODAL-->
-    <div class="backdrop form-page">
+    <div class="backdrop form-page is-open">
       <div class="form-page-container">
         <button class="close-btn" type="button">
           <svg class="img-close" width="8" height="8">
@@ -594,6 +604,82 @@
           </div>
           <button class="form-button" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <!--    MOBILE MENU   -->
+    <div class="mobile-menu-wrapper">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg
+            class="mobile-menu-close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="mobile menu close icon"
+          >
+            <use href="./images/icons.svg#icon-closeblack"></use>
+          </svg>
+        </button>
+        <nav class="navigation-menu-mobile">
+          <ul class="list-studio-mobile">
+            <li>
+              <a class="link-studio-mobile studio" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li><a class="link-studio-mobile" href="">Portfolio</a></li>
+            <li><a class="link-studio-mobile" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <div>
+          <address class="connection-menu-mobile">
+            <ul class="connection-list-menu-mobile">
+              <li>
+                <a
+                  class="link-connection-menu-mobile text-menu-info"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="link-connection-menu-mobile"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-links">
+            <li class="link">
+              <a href="" class="link-icon">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link">
+              <a href="" class="link-icon">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link">
+              <a href="" class="link-icon">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link">
+              <a href="" class="link-icon">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
